@@ -51,7 +51,9 @@ function orderFromUser(){
     }
     function acceptRestaurant(){
         if(restaurantObj[food] <= price){
-            return acceptByCourier();
+            confirm("Would you like to accept your order?") ?
+            acceptByCourier() :
+            console.log("Your order canceled");
         }else{
             console.log(`Your budget is not enough for ${food} in ${restaurant}:( Try other restaurants`);
         }
