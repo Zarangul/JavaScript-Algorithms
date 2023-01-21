@@ -1,6 +1,6 @@
 // Task 1: Clone array with an array 
 //         methods. minimum 2 case
-
+// ---> clone with forEach() and map()
 const arr = [2, 4, 45, 34, 23];
 console.log(arr.slice(0));
 arr.forEach(e => console.log(e));
