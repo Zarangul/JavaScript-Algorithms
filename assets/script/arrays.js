@@ -3,7 +3,22 @@
 // ---> clone with forEach() and map()
 const arr = [2, 4, 45, 34, 23];
 console.log(arr.slice(0));
-arr.forEach(e => console.log(e));
+// case 1:
+const newArrForeach = []
+arr.forEach(e => newArrForeach.push(e);
+console.log(newArrForeach);
+// case 2:
+const newArr = arr.map(e => e);
+console.log(newArr);
+// case 3:
+const newArrMap = arr.map(e => e);
+console.log(newArrMap);
+// case 4:
+const newArrSpread = [...arr];
+console.log(newArrSpread);
+// case 5:
+const [...newArrRest] = arr;
+console.log(newArrRest);
 
 
 // Task 2: Write a JS program to sort the items 
@@ -42,7 +57,7 @@ arr.forEach(e => console.log(e));
 // Task 5: Write a JS function to remove a specific element
 //         from an array. function([1,2,4,5,6],4)=>[1,2,5,6]
 
-// function removeElementFromArray(arr, element){
+// function removeElementFromArray(element, arr=[]){
 //     return arr.filter(e => e !== element);
 // }
 // removeElementFromArray([1,2,4,5,6],4);
@@ -114,7 +129,7 @@ arr.forEach(e => console.log(e));
 
 // const arr = [1,4,5];
 // let sum = 0;
-// arr.map(e => sum += e);
+// arr.forEach(e => sum += e);
 // console.log(sum);
 
 
